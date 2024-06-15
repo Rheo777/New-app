@@ -1,0 +1,157 @@
+/* styles.css */
+
+/* Resetting default margin and padding and using border-box for box-sizing */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the .navbar container */
+.navbar {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling the logo container */
+.navbar-logo {
+    text-align: center;
+    margin-bottom: 10px; /* Space below the logo */
+}
+
+/* Styling the logo text */
+.navbar-logo a {
+    text-decoration: none; /* Removing underline from links */
+    color: white; /* Text color */
+    font-size: 24px; /* Adjusting font size */
+    font-weight: bold; /* Making text bold */
+}
+
+/* Styling the slogan text */
+.navbar-logo .slogan {
+    margin: 0;
+    font-size: 14px; /* Adjusting font size for the slogan */
+    font-style: italic; /* Italic text for the slogan */
+    color: #ccc; /* Lighter color for the slogan */
+}
+
+/* Styling the .navbar-categories container */
+.navbar-categories {
+    display: flex;
+}
+
+/* Styling the .navbar-nav list */
+.navbar-nav {
+    list-style: none; /* Removing default list styles */
+    padding: 0; /* Resetting padding */
+    display: flex;
+    justify-content: center; /* Centering navigation items horizontally */
+}
+
+/* Styling the .nav-item links */
+.nav-item {
+    margin: 0 10px; /* Spacing between navigation items */
+}
+
+/* Styling the .nav-link links */
+.nav-link {
+    text-decoration: none; /* Removing underline from links */
+    color: white; /* Text color */
+    font-size: 18px; /* Adjusting font size */
+    transition: all 0.3s ease; /* Adding smooth transition effect */
+}
+
+/* Hover effect for .nav-link */
+.nav-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Active link styling for .nav-link */
+.nav-link.active {
+    font-weight: bold; /* Making active link bold */
+}
+
+/* Styling the search bar */
+.navbar-search {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#search-input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #555;
+}
+
+/* Styling the row container */
+.row {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px; /* Gap between news items */
+}
+
+/* Styling the news item container */
+.news-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+/* Styling the images inside news items */
+.news-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures the image covers the given area */
+    margin-right: 10px;
+}
+
+/* Styling the news content */
+.news-content-wrapper {
+    flex: 1;
+}
+
+.news-title {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.news-desc, .news-content, .news-time {
+    margin: 0 0 5px 0;
+}
+.navbar-country {
+    margin-top: 10px;
+}
+
+#country-select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
